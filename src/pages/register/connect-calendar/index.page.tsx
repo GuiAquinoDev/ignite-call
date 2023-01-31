@@ -1,9 +1,8 @@
 import { Heading, MultiStep, Text, Button } from '@ignite-ui/react'
 import { ArrowRight } from 'phosphor-react'
-import {} from 'next-auth'
 import { Container, Header } from '../styles'
 import { ConnectBox, ConnectItem } from './styles'
-// import { signIn } from 'next-auth/react'
+import { signIn } from 'next-auth/react'
 
 export default function Register() {
   //   async function handleRegister(data: RegisterFormData) {}
@@ -27,7 +26,7 @@ export default function Register() {
           <Button
             variant="secondary"
             size="sm"
-            // onClick={() => signIn('google')}
+            onClick={() => signIn('google')}
           >
             Conectar
           </Button>
